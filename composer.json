@@ -17,10 +17,10 @@
     }
   ],
   "require": {
-    "php": "^8.0",
-    "illuminate/events": "^8.13 || ^9.3",
-    "illuminate/notifications": "^8.13 || ^9.3",
-    "illuminate/support": "^8.13 || ^9.3",
+    "php": "^7.2",
+    "illuminate/events": "^6.0 || ^7.0 || ^8.13 || ^9.3",
+    "illuminate/notifications": "^6.0 || ^7.0 || ^8.13 || ^9.3",
+    "illuminate/support": "^6.0 || ^7.0 || ^8.13 || ^9.3",
     "kreait/laravel-firebase": "^4.1"
   },
   "require-dev": {
