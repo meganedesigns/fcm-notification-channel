@@ -27,7 +27,7 @@ class FCMChannel
      */
     protected const MAX_AMOUNT_OF_TOKENS = 500;
 
-    public function __construct(protected Dispatcher $events)
+    public function __construct(Dispatcher $events)
     {
         //
     }
@@ -131,7 +131,7 @@ class FCMChannel
         $targetType = $notifiable->routeNotificationFor('FCMTargetType', $notification);
         $targetValue = $notifiable->routeNotificationFor('FCM', $notification);
 
-        $targetType = (string)Str::of($targetType ?? MessageTarget::TOKEN)->lower();
+        $targetType = (string)strtolower($targetType ?? MessageTarget::TOKEN);
         $targetValue = Arr::wrap($targetValue);
 
         return [
